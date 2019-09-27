@@ -1,0 +1,18 @@
+
+prometheus_archive_file_download_dir: '/opt/monitoring'
+
+version: "2.12.0"
+prometheus_download_url : "https://github.com/prometheus/prometheus/releases/download/v{{ version }}/prometheus-{{version}}.linux-amd64.tar.gz"
+
+prometheus_download_zip: "prometheus-{{version}}.linux-amd64.tar.gz"
+
+prometheus_folder_name: "prometheus-{{version}}.linux-amd64"
+
+prometheus_binary: "prometheus"
+
+prometheus_binary_location: "/usr/local/bin/"
+
+prometheus_configuration_directory: "/etc/prometheus"
+
+prometheus_service_name: prometheus
+
